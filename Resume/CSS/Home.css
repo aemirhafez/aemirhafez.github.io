@@ -1,0 +1,251 @@
+
+.container-home{
+     background-color: 	#DCDCDC;
+     color: black;
+     padding: 50px;
+}
+
+.section-icon{
+  text-align: right;
+}
+
+.container-abouting{
+    color: black;
+    text-align: center;
+    padding: 50px;
+    width: 70%;
+    background-color: white;
+}
+
+
+
+.container-education{
+    color: black;
+    text-align: center;
+    background-color: #DCDCDC;
+    padding: 50px;
+}
+
+.container-mywork{
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 50px;
+}
+
+.container-contact{
+    background-color: #DCDCDC;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+.Contact-left{
+  text-align: left;
+  justify-content: left;
+}
+
+.col-text{
+ padding-bottom: 100px;
+}
+
+img {
+    
+    -webkit-filter: drop-shadow(5px 5px 5px 		#909090);
+    filter: drop-shadow(5px 5px 5px 		#909090);
+  }
+
+.dummy-border{
+    border: 3px solid green;
+}
+
+/*MY WORK */
+
+  .card{
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .card:hover{
+       transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+  
+  .card h3{
+    font-weight: 600;
+  }
+  
+  .card img{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    max-height: 120px;
+  }
+  
+  
+
+  @media(max-width: 990px){
+    .card{
+      margin: 20px;
+    }
+  } 
+
+
+/*TIMELINE */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: black;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid black;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+
+/*CARD */
+.container-about-img {
+  position: relative;
+  width: 70%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-about {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.container-about-img:hover .overlay-about {
+  opacity: 1;
+}
+
+.text-about {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.img-sizing{
+    height: 150px;
+    width: 150px;
+}
+
+.row{
+    justify-content: center;
+}
+
+
+/* NAVBAR BAR BAR */
+ul{
+  list-style-type: none;
+}
+.wrapHead{
+  width: 90%;
+  margin: 0 auto;
+  transition: all ease-in-out 0.5s;
+}
+.wrapHead.fixed-to-top{
+  width: 96%;
+}
+header{
+  position: fixed;
+  width: 100%;
+  background: rgba(38, 50, 56, 0.5);
+  padding: 10px 0;
+  z-index: 1;
+  transition: all ease-in-out 0.5s;
+}
+header:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+header.fixed-to-top{
+  background: rgba(38, 50, 56, 1);
+}
+#brand{
+  color: #ccc;
+  float: left;
+}
+#brand h1{
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 5px #111;
+}
+nav{
+  float: right;
+  margin-top: 10px;
+}
+nav li{
+  display: inline-block;
+  margin: 0 4px;
+}
+nav li a{
+  padding: 10px 0;
+  text-decoration: none;
+  color: #e1e1e1;
+  transition: all ease-in-out 0.5s;
+}
+nav li a:hover{
+  color: #bbb;
+}
+section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+section h2{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-transform: capitalize;
+  text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
+}
+
