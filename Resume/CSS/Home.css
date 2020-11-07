@@ -5,6 +5,10 @@
      padding: 50px;
 }
 
+.home-text{
+  font-size: 70px;
+}
+
 .section-icon{
   text-align: right;
 }
@@ -12,25 +16,27 @@
 .container-abouting{
     color: black;
     text-align: center;
-    padding: 50px;
+    padding: 50px 0px;
     width: 70%;
     background-color: white;
 }
 
-
+.row{
+  padding: 20px;
+}
 
 .container-education{
     color: black;
     text-align: center;
     background-color: #DCDCDC;
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .container-mywork{
     text-align: center;
     color: black;
     background-color: white;
-    padding: 50px;
+    padding: 50px 0px;
 }
 
 .container-contact{
@@ -248,4 +254,81 @@ section h2{
   text-transform: capitalize;
   text-shadow: 10px 10px 3px rgba(0,0,0, 0.2);
 }
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 375px) {
+  .home-text{
+   font-size: 20px; 
+  }
+  .col-text{
+    padding: 5px;
+  }
+  .container-home{
+    padding: 0px;
+  }
+  .img-fluid{
+    padding-top: 50px;
+  }
 
+  .card .card-1{
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 576px) {  
+ .container-home{
+   font-size: 5px;
+ }
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  .container-home{
+    font-size: 5px;
+  }
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .container-home{
+    font-size: 5px;
+  }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  .container-home{
+    font-size: 5px;
+  }
+}
+ 
+ 
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+ 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+  .container-home{
+    font-size: 5px;
+  }
+}
