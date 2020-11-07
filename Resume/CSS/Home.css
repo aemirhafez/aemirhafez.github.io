@@ -5,8 +5,11 @@
      padding: 50px;
 }
 
-.home-text{
-  font-size: 70px;
+
+
+.home-font{
+  padding-top: 20px;
+ font-size: 70px;
 }
 
 .section-icon{
@@ -272,9 +275,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
  
  
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 375px) {
+@media (max-width: 300px) {
+  .btn-home{
+    height: 30px;
+    width: 150px;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .btn-home a{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+
   .home-text{
-   font-size: 20px; 
+   font-size: 15px; 
+  }
+
+  .home-font{
+    padding-top: 20px;
+   font-size: 20px;
   }
   .col-text{
     padding: 5px;
@@ -292,31 +314,37 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
 }
 
-@media (min-width: 576px) {  
- .container-home{
-   font-size: 5px;
- }
-}
- 
+@media (max-width: 375px) {
+  .home-font{
+   font-size: 30px; 
+  }
+  .col-text{
+    padding: 5px;
+  }
+  .container-home{
+    padding: 0px;
+  }
+  .img-fluid{
+    padding-top: 50px;
+  }
+
+  .card .card-1{
+    padding: 0px;
+    margin: 0;
+  } 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  .container-home{
-    font-size: 5px;
-  }
+
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .container-home{
-    font-size: 5px;
-  }
+
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  .container-home{
-    font-size: 5px;
-  }
+
 }
  
  
